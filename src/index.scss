@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.5px;
+
+  .button {
+    background: #56cb9d;
+    padding: 3px 40px;
+    outline: 0;
+    cursor: pointer;
+
+    &:hover {
+      background: #5ad4a1;
+    }
+  }
+
+  table {
+    tr {
+      th {
+        font-size: 13px !important;
+        text-transform: uppercase;
+        color: #333 !important;
+        letter-spacing: 0;
+      }
+
+      td {
+        font-size: 13px !important;
+        color: #333 !important;
+        letter-spacing: 0;
+      }
+    }
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  padding: 20px;
+  justify-content: center;
+  
+  .dropSection {
+    min-width: 42vw;
+    transition: 0.5s all ease-in-out 0s;
+  }
+  .workflow_dropsection {
+    min-width: 75vw;
+  }
+
+  &.leftOpened {
+    .dropSection {
+      min-width: 80vw;
+    }
+  }
+
+  &.rightOpened {
+    .dropSection {
+      min-width: 60vw;
+    }
+  }
+}
+
+.switch {
+  > span + span {
+    width: 34px !important;
+    height: 22px !important;
+    border-radius: 50px !important;
+    margin-top: -11px !important;
+    background: #cccccc;
+    opacity: 1 !important;
+  }
+
+  .MuiSwitch-colorPrimary-217.MuiSwitch-checked-216 + .MuiSwitch-bar-220 {
+    background: #5ad4a1;
+  }
+
+  span {
+    span {
+      span {
+        width: 14px !important;
+        height: 14px !important;
+        background: #ffffff;
+      }
+    }
+  }
+}
+
+ul[role="listbox"] {
+  li {
+    font-size: 14px;
+  }
+}
+.snackbarCloseBtn {
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+
+.display_flex {
+  display: flex;
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}
+.noBackgroundColor {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.bottomMargin20 {
+  margin-bottom: 20px !important;
+}
+.rightMargin10 {
+  margin-bottom: 10px !important;
+}

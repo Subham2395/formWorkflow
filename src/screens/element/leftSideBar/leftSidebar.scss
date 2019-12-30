@@ -1,0 +1,91 @@
+.leftSidebar {
+	width: 17vw;
+	background: #ffffff;
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+	min-height: 80vh;
+	max-height: 80vh;
+	overflow: auto;
+	transition: 0.5s all ease-in-out 0s;
+	@media screen and (max-width: 768px) {
+		width: 92vw;
+		min-height: auto;
+		max-height: auto;
+		margin: 0 auto;
+	}
+	.nav {
+		padding: 0;
+
+		h4 {
+			font-size: 14px;
+			text-transform: uppercase;
+			margin: 0;
+			font-weight: 500;
+
+			span {
+				margin-left: 5px;
+				vertical-align: -1px;
+			}
+		}
+
+		li {
+			display: flex;
+			justify-content: space-between;
+			cursor: move;
+			border-bottom: 1px solid #ccc;
+			span {
+				font-size: 12px;
+				font-weight: 500;
+				// text-transform: uppercase;
+			}
+
+			button {
+				padding: 0 !important;
+				background: transparent !important;
+				border: 0;
+				font-weight: 500;
+				color: #5FD5A1;
+				text-transform: uppercase;
+				font-size: 12px;
+
+				&:hover {
+					color: #000;
+				}
+
+				span {
+					text-transform: none;
+					vertical-align: 1px;
+				}
+			}
+
+			&:first-child {
+				cursor: default;
+			}
+		}
+	}
+}
+
+.inputStyle {
+	width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	margin-bottom: 15px;
+	&:focus{
+		outline: none;
+	}
+}
+
+.textareaStyle{
+	width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	min-height: 100px;
+	margin-bottom: 15px;
+	&:focus{
+		outline: none;
+	}
+}

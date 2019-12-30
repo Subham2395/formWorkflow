@@ -1,0 +1,47 @@
+.listTitle {
+  color: #333;
+  font-size: 20px;
+  margin: 0 0 30px;
+  font-weight: 500;
+}
+
+.formList {
+  width: 85vw;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.3);
+  padding: 0 0 30px;
+  min-height: 85vh;
+  max-height: 85vh;
+  overflow: auto;
+  .formListHeader {
+    padding: 25px 30px;
+    .workflowTableHeaderBtnGroup {
+      width: 100%;
+      margin-bottom: 4px;
+      color: #ffffff;
+    }
+  }
+}
+
+button {
+  &.icnBtn {
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    outline: 0 !important;
+    .material-icons {
+      vertical-align: -3px;
+      margin-right: 2px;
+      font-size: 18px;
+    }
+    &:hover {
+      background: transparent !important;
+      // color: #5ad4a1;
+    }
+  }
+}

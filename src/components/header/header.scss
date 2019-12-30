@@ -1,0 +1,35 @@
+.header{
+	padding: 20px;
+	position: relative;
+	&:after{
+		content: "";
+		position: absolute;
+		height: 255px;
+		left: 0;
+		top: 0;
+		right: 0;
+		background-color: #85DFA5;
+		background-image: linear-gradient(to right, #85DFA5, #59D3A0);
+		z-index: -1;
+	}
+	h2{
+		margin: 0;
+		font-size: 16px;
+		font-weight: 500;
+		color: #ffffff;
+		text-transform: uppercase;
+	}
+	.headerMenu{
+			color: #ffffff;
+			font-size: 14px;
+			text-transform: uppercase;
+			font-weight: 500;
+			margin-right: 30px;
+			&:last-child{
+				margin-right: 0px;
+			}
+			&:hover, &.active{
+				color: #000;
+		}
+	}
+}

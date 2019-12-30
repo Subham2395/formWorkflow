@@ -1,0 +1,214 @@
+.workflow_dropSection{
+	width: 96vw;
+}
+.dropSection {
+	min-height: 80vh;
+	max-height: 80vh;
+	// overflow: hidden;
+	border-radius: 5px;
+	padding: 20px;
+
+	@media screen and (max-width: 768px) {
+		min-height: auto;
+	}
+	.formTitle {
+		display: block;
+		font-size: 15px;
+		letter-spacing: 0;
+		color: #000;
+		border: 0;
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 10px;
+		outline: 0 !important;
+		padding: 5px 0;
+		width: 250px;
+	}
+
+	.formDescription {
+		font-size: 13px;
+		letter-spacing: 0;
+		border: 0;
+		border-bottom: 1px solid #ccc;
+		outline: 0 !important;
+		padding: 5px 0;
+		width: 500px;
+		margin-bottom: 20px;
+	}
+
+	.dropContent {
+		border: 1px dashed #ccc;
+		padding: 20px;
+		height: 65vh;
+		justify-content: center;
+		align-items: center;
+		@media screen and (max-width: 768px) {
+			width: 92vw;
+			min-height: auto;
+			max-height: auto;
+			height: 50vh;
+		}
+		.dragDrop {
+			font-size: 20px;
+			color: #999;
+			text-align: center;
+			line-height: 1.8;
+		}
+	}
+
+	.elementContent {
+		padding: 20px 0;
+	}
+}
+
+.listedElement {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+
+	li {
+		padding: 0 10px 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid #ccc;
+
+		.selectContainer {
+			width: calc(100% - 250px);
+			display: inline-block;
+			vertical-align: bottom;
+			position: relative;
+			z-index: 1;
+
+			.formControl {
+				width: 100%;
+
+				>label {
+					color: #999;
+					letter-spacing: 0;
+					font-size: 15px;
+					top: 3px;
+				}
+
+				>label+div {
+					&:before {
+						border-bottom: 1px solid #ccc !important;
+					}
+
+					&:after {
+						border-bottom: 1px solid #ccc !important;
+					}
+
+					div {
+						background-color: transparent !important;
+					}
+				}
+			}
+		}
+
+		.selectAction {
+			width: 250px;
+			text-align: right;
+			display: inline-block;
+			vertical-align: bottom;
+			position: relative;
+			z-index: 1;
+
+			.icnBtn {
+				padding: 0 12px !important;
+				color: #000;
+
+				&.draggable {
+					cursor: move;
+				}
+
+				&:hover {
+					color: #56cb9d;
+				}
+			}
+		}
+	}
+}
+
+.srd-demo-canvas {
+  height: 100%;
+  min-height: 380px;
+  background-color: rgb(60,60,60) !important;
+  $color: rgba(white, .05);
+  background-image:
+    linear-gradient(0deg,
+      transparent 24%,
+      $color 25%,
+      $color 26%,
+      transparent 27%,
+      transparent 74%,
+      $color 75%,
+      $color 76%,
+      transparent 77%,
+      transparent),
+    linear-gradient(90deg,
+      transparent 24%,
+      $color 25%,
+      $color 26%,
+      transparent 27%,
+      transparent 74%,
+      $color 75%,
+      $color 76%,
+      transparent 77%,
+      transparent);
+	background-size:50px 50px;
+}
+.workflow_wrapper{
+    display: flex;
+    width: 100%;
+    background-color: transparent !important;
+    .left_workflow{
+        width: 20%;
+        background-color: #ffffff;
+        border-radius: 5px;
+        padding: 15px 15px;
+        height: 80vh;
+        box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+        overflow: auto;
+    }
+    .right_workflow{
+        width: 79%;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-left: 1%;
+        padding: 15px 15px;
+        height: 80vh;
+        overflow: hidden;
+        box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+        position: relative;
+        .header_grid{
+            position: absolute;
+            top: 12px;
+            width: 100%;
+            background: #ffffff;
+            z-index: 1;
+            left: 4px;
+            padding: 15px 15px;
+        }
+    }
+}
+.left_wf_innerIcon{
+    height: auto;
+}
+.symbolpalette_inner{
+    height: auto !important;
+}
+button.add_btn{
+    background: none !important;
+    border: none;
+    padding: 0 !important;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #56CB9D;
+    width: 100%;
+    text-align: left;
+    transition: all 0.4s ease-in-out;
+    &:hover{
+        background-color: none !important;
+        color:#469870;
+    }
+}
